@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Application Name: Pear
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Team: Grey Jedi
 
-## Available Scripts
+- Kevin Henry
+- Garfield Grant
+- Marie Marcos
+- Tony Regaldo
 
-In the project directory, you can run:
+## Problem Domain
 
-### `npm start`
+Considering the current supply chain issues, it is tough to source particular/high demand items in the way that we have been accustomed to knowing that you can get exactly what you need when you need it.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Summary
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Pear is a peer to peer E-Commerce app that empowers users to post listings for their items and/or shop from the comfort of their homes. Sellers can post whole items and/or break the listing down by component and price them likewise. The buyer can search for individual parts or whole items. If a user is interested in the purchase, they can send a message to the seller and they can discuss it within the app's messaging component. Some rules are no haggling. The app will also pick the location for the transaction. Only face to face transactions. There will be a collection component that tracks a user's inventory of categorized items.
 
-### `npm test`
+## MVP
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Display a storefront.
+- Display static and dynamic pages.
+- User management (email, registration).
+- Enable users to create a listing.
+- Enable users to search for items.
+- Place an item in a shopping cart from a listing.
+- Present a location to conduct the transaction.
 
-### `npm run build`
+## Useful Links
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [Trello Board](https://trello.com/b/Uwi2XXv2/pears)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Repo](https://github.com/Marleyman876/pear)
