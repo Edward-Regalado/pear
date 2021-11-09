@@ -19,7 +19,8 @@ function Header() {
 
   return (
     <header>
-      <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
+      <Navbar bg="light" expand="lg" collapseOnSelect>
+      {/* <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect> */}
         <Container>
           <LinkContainer to='/'>
             <Navbar.Brand href="/">PEAR</Navbar.Brand>
@@ -30,11 +31,33 @@ function Header() {
             <SearchBox />
             {/* <Nav className='ml-auto'> */}
             <Nav className="mr-auto">
+
+              <Nav.Link href="/post">
+                <i className="fas fa-shopping-cart"></i> List
+              </Nav.Link>
               
               <Nav.Link href="/cart">
                 <i className="fas fa-shopping-cart"></i> Cart
               </Nav.Link>
 
+              <Nav.Link href="/login">
+                <i className="fas fa-users"></i> Login
+              </Nav.Link>
+              <Nav.Link href="/register">
+                <i className="fas fa-user"></i> Register
+              </Nav.Link>
+              <Nav.Link href="/otherstuffhere">
+                <i className="fas fa-user"></i> Customer
+              </Nav.Link>
+              {/* <Nav.Link href="/otherstuffhere">
+                Customer
+              </Nav.Link> */}
+              <Nav.Link href="/inbox">
+                <i className="fas fa-user"></i> Inbox
+              </Nav.Link>
+              <Nav.Link href="/about">
+                <i className="fas fa-info"></i> About
+              </Nav.Link>
               {userInfo ? (
                 <NavDropdown title={userInfo.name} id='username'>
                   <LinkContainer to='/profile'>
@@ -44,12 +67,9 @@ function Header() {
                 </NavDropdown>
               ): (
                 <Nav.Link href="/login">
-                <i className="fas fa-user"></i> Login
+                <i className="fas fa-users"></i> Login
                 </Nav.Link>
               )}              
-              <Nav.Link href="/otherstuffhere">
-                Customer
-              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

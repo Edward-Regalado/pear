@@ -5,7 +5,7 @@ import { Row, Col, Image, ListGroup, Button, Card, Form } from "react-bootstrap"
 import Rating from "../components/Rating";
 import Loader from "../components/Loader";
 import { ErrorMessage } from "../components/Message";
-import { listProductsDetails } from '../actions/productActions';
+import { listProductDetails } from '../actions/productActions';
 
 
 
@@ -18,7 +18,7 @@ function ProductScreen({ match, history }) {
     const { loading, error, product } = productDetails
 
     useEffect(() => {
-        dispatch(listProductsDetails(match.params.id))
+        dispatch(listProductDetails(match.params.id))
     }, [dispatch, match.params.id]);
 
   const addToCartHandler = () => {
