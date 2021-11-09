@@ -11,8 +11,6 @@ export function Message({ variant, children }) {
 }
 
 
-
-
 export function ErrorMessage({variant, children}) {
     return (
         <Alert variant={variant} style={{ textAlign:'center' }}>
@@ -21,6 +19,8 @@ export function ErrorMessage({variant, children}) {
         </Alert>
     )
 }
+
+
 export function EmptyCartMessage({variant, children}) {
     return (
         <Alert variant={variant} style={{ textAlign:'center' }}>
@@ -29,6 +29,7 @@ export function EmptyCartMessage({variant, children}) {
         </Alert>
     )
 }
+
 
 export function PasswordMessage({variant, children}) {
     return (

@@ -14,6 +14,8 @@ import ShippingScreen from './screens/ShippingScreen';
 import PaymentScreen from './screens/PaymentScreen';
 import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import OrderScreen from './screens/OrderScreen';
+import AboutScreen from "./screens/AboutScreen";
+import PostScreen from "./screens/PostScreen";
 
 
 
@@ -34,6 +36,8 @@ function App() {
           <Route path="/product/:id" component={ProductScreen} />
           <Route path="/cart/:id?" component={CartScreen} />
           <Route path="/otherstuffhere/" component={DoStuffScreen} />
+          <Route path="/about/" component={AboutScreen} />
+          <Route path="/post/" component={PostScreen} />
         </Container>
       </main>
       <Footer />
