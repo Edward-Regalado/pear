@@ -128,7 +128,7 @@ export const payOrder = (id, paymentResult) => async (dispatch, getState) => {
 export const listMyOrders = () => async (dispatch, getState) => {
     try {
         dispatch({
-            type: actions.ORDER_LIST_REQUEST
+            type: actions.ORDER_LIST_MY_REQUEST
         })
 
         const {
@@ -148,13 +148,13 @@ export const listMyOrders = () => async (dispatch, getState) => {
         )
 
         dispatch({
-            type: actions.ORDER_LIST_SUCCESS,
+            type: actions.ORDER_LIST_MY_SUCCESS,
             payload: data
         })
 
     } catch(error){
         dispatch({
-            type: actions.ORDER_LIST_FAIL,
+            type: actions.ORDER_LIST_MY_FAIL,
             payload: error.response && error.response.data.detail
                 ? error.response.data.detail
                 : error.message

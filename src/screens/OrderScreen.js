@@ -27,7 +27,7 @@ function OrderScreen({ match }) {
     const addPayPalScript = () => {
         const script = document.createElement('script')
         script.type = 'text/javascript'
-        script.src = 'https://www.paypal.com/sdk/js?client-id=test' // replace test with client id
+        script.src = 'https://www.paypal.com/sdk/js?client-id=Abb2wYX_2vu-3FlSyCcixwMep3_ZIBWewMJ3bWTnyxHggdCjyJTPIU8dzovFjjOzE4l3EjvxtUDFIleg'
         script.async = true
         //ensure software development kit is ready for paypal, then append the script
         script.onload = () => {
@@ -91,7 +91,7 @@ function OrderScreen({ match }) {
                                 {order.paymentMethod}
                             </p>
                             {order.isPaid ? (
-                                <Message variant='success'>Paid on {order.paidAt}</Message>
+                                <Message variant='success'>Paid on {order.paidAt.substring(0,10)}</Message>
                             ) : (
                                 <Message variant='warning'> Not Paid</Message>
                             )}
