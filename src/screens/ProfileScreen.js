@@ -6,7 +6,7 @@ import { ErrorMessage, PasswordMessage }from '../components/Message';
 import Loader from '../components/Loader';
 import { getUserDetails, updateUserProfile } from '../actions/userActions'
 import { USER_UPDATE_PROFILE_RESET } from '../constants/userConstants'
-
+import { listMyOrders } from '../actions/orderActions'
 
 
 function Profile({ history }) {
@@ -37,7 +37,7 @@ function Profile({ history }) {
             if(!user || !user.name || success){
                dispatch({ type: USER_UPDATE_PROFILE_RESET })
                dispatch(getUserDetails('profile'))
-
+               dispatch(listMyOrders)
             } else {
                 setName(user.name)
                 setEmail(user.email)
