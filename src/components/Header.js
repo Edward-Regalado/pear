@@ -23,7 +23,7 @@ function Header() {
       {/* <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect> */}
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand href="/">PEAR</Navbar.Brand>
+            <Navbar.Brand className="brand" href="/">PEAR</Navbar.Brand>
           </LinkContainer>
     
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -33,14 +33,14 @@ function Header() {
             <Nav className="mr-auto">
 
               <Nav.Link href="/post">
-                <i className="fas fa-shopping-cart"></i> List
+                <i class="fa fa-cog" aria-hidden="true"></i> List
               </Nav.Link>
               
               <Nav.Link href="/cart">
                 <i className="fas fa-shopping-cart"></i> Cart
               </Nav.Link>
 
-              <Nav.Link href="/login">
+              {/* <Nav.Link href="/login">
                 <i className="fas fa-users"></i> Login
               </Nav.Link>
               <Nav.Link href="/register">
@@ -48,12 +48,12 @@ function Header() {
               </Nav.Link>
               <Nav.Link href="/otherstuffhere">
                 <i className="fas fa-user"></i> Customer
-              </Nav.Link>
+              </Nav.Link> */}
               {/* <Nav.Link href="/otherstuffhere">
                 Customer
               </Nav.Link> */}
               <Nav.Link href="/inbox">
-                <i className="fas fa-user"></i> Inbox
+                <i class="fa fa-inbox" aria-hidden="true"></i> Inbox
               </Nav.Link>
               <Nav.Link href="/about">
                 <i className="fas fa-info"></i> About
