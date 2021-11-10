@@ -32,7 +32,7 @@ function Profile({ history }) {
     const { success} = userUpdateProfile
 
     const orderListMy = useSelector(state => state.orderListMy)
-    const { loaing: loadingOrders, error: errorOrders, orders} = orderListMy
+    const { loading: loadingOrders, error: errorOrders, orders} = orderListMy
 
     useEffect(() => {
         if(!userInfo){
@@ -147,9 +147,9 @@ function Profile({ history }) {
                             {orders.map(order => (
                                 <tr key={order._id}>
                                     <td>{order._id}</td>
-                                    <td>{order.createdAt.substring(0, 10)}</td>
+                                    <td>{order.createdAt}</td>
                                     <td>${order.totalPrice}</td>
-                                    <td>{order.isPaid ? order.paidAt.substring(0, 10) : (
+                                    <td>{order.isPaid ? order.paidAt : (
                                         <i className='fas fa-times' style={{color: 'red'}}></i>
                                     )}</td>
                                     <td>

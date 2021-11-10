@@ -40,17 +40,18 @@ function Header() {
                 <i className="fas fa-shopping-cart"></i> Cart
               </Nav.Link>
 
-              {/* <Nav.Link href="/login">
+              {/* {/* <Nav.Link href="/login">
                 <i className="fas fa-users"></i> Login
               </Nav.Link>
               <Nav.Link href="/register">
-                <i className="fas fa-user"></i> Register
-              </Nav.Link>
+                <i className="fas fa-user"></i> Register */}
+
+              {/* </Nav.Link> */}
               <Nav.Link href="/otherstuffhere">
                 <i className="fas fa-user"></i> Customer
-              </Nav.Link> */}
+              </Nav.Link> 
               {/* <Nav.Link href="/otherstuffhere">
-                Customer
+                OtherStuff
               </Nav.Link> */}
               <Nav.Link href="/inbox">
                 <i class="fa fa-inbox" aria-hidden="true"></i> Inbox
