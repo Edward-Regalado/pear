@@ -40,7 +40,7 @@ function CartScreen({ match, location, history }) {
                         Your cart is empty <Link to='/'>Go Back</Link>
                     </EmptyCartMessage>
                 )  : (
-                    <listGroup variant='flush'>
+                    <ListGroup variant='flush'>
                         {cartItems.map(item => (
                             <ListGroup.Item key={item.product}>
                                 <Row>
@@ -85,7 +85,7 @@ function CartScreen({ match, location, history }) {
                                 </Row>
                             </ListGroup.Item>
                         ))}
-                    </listGroup>
+                    </ListGroup>
                 )}
             </Col>
             <Col md={4}>
