@@ -59,7 +59,6 @@ function Post({ match, history }) {
         }
 
 
-
     }, [dispatch, product, productId, history, successUpdate])
 
     const submitHandler = (e) => {

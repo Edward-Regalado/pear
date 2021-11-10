@@ -17,6 +17,7 @@ import OrderScreen from './screens/OrderScreen';
 import AboutScreen from "./screens/AboutScreen";
 import PostScreen from "./screens/PostScreen";
 import UserListScreen from "./screens/UserListScreen";
+import PostListScreen from "./screens/PostListScreen";
 
 
 
@@ -37,6 +38,7 @@ function App() {
           <Route path="/product/:id" component={ProductScreen} />
           <Route path="/cart/:id?" component={CartScreen} />
           <Route path="/admin/userlist" component={UserListScreen} />
+          <Route path="/admin/productlist" component={PostListScreen} />
           <Route path="/otherstuffhere/" component={DoStuffScreen} />
           <Route path="/about/" component={AboutScreen} />
           <Route path="/post/" component={PostScreen} />
